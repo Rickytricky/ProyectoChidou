@@ -1,0 +1,14 @@
+<form #pageForm="ngForm" (ngSubmit)="onSubmit(pageForm)">
+    <div class="form-group">
+
+        <input type="text" class="form-control" name="title" #title="ngModel" [(ngModel)]="pageService.selectedPage.title" placeholder="add Taitol peich">
+        <input type="text" class="form-control" name="subtitle" #subtitle="ngModel" [(ngModel)]="pageService.selectedPage.subtitle" placeholder="add subTairol peich">
+        <input type="text" class="form-control" name="postedby" #postedby="ngModel" [(ngModel)]="pageService.selectedPage.postedby" placeholder="add yur neim">
+        <input type="text" class="form-control" name="date" #date="ngModel" [(ngModel)]="pageService.selectedPage.date" placeholder="add the curren deit">
+
+        <div class="clearfix">
+            <button type="submit" class="btn btn-primary float-right" href="#">Poust et &rarr;</button>
+        </div>
+
+    </div>
+</form>
